@@ -153,14 +153,16 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",
-    "http://localhost:3000",
-    "https://devnoms.onrender.com",
-    "https://django-chat-application.onrender.com",
+    # "http://127.0.0.1:5500",
+    # "http://localhost:3000",
+    # "https://devnoms.onrender.com",
+    # "https://django-chat-application.onrender.com",
+    "*",
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://devnoms.onrender.com",
-    "https://django-chat-application.onrender.com",
+    # "https://devnoms.onrender.com",
+    # "https://django-chat-application.onrender.com",
+    "*",
 ]
